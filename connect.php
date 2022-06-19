@@ -1,7 +1,7 @@
 <?php
 
 // خطا كارثي استغرق يوم  dbn  بدلا من  dbname
-$dsn = "mysql:host=localhost;dbname=yassensouq";
+$dsn = "mysql:host=localhost;dbname=noteapp";
 $user = "root";
 $password = "";
 
@@ -9,6 +9,8 @@ $password = "";
 $option = array(
 PDO::MYSQL_ATTR_INIT_COMMAND =>"SET NAMES UTF8"
 );
+
+include "functions.php";
 //code to connect
 try{
        $con = new PDO( $dsn , $user , $password , $option );
